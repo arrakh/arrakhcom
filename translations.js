@@ -18,6 +18,7 @@ const TRANSLATIONS = {
 
     // ---- Navigation ----
     'nav.langSwitch': '日本語',
+    'showreel.label': 'Showreel',
     'nav.phone': '+62 877 2128 2164',
 
     // ---- Hero ----
@@ -116,6 +117,7 @@ const TRANSLATIONS = {
 
     // ---- Navigation ----
     'nav.langSwitch': 'English',
+    'showreel.label': 'ショーリール',
     'nav.phone': '+62 877 2128 2164',
 
     // ---- Hero ----

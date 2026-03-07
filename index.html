@@ -89,7 +89,17 @@
      HERO
      ===================== -->
 <section class="hero">
-  <div class="container">
+  <!-- Background video: autoplay, muted, looping, dimmed via CSS -->
+  <div class="hero-video-bg">
+    <iframe
+      src="https://www.youtube.com/embed/vzFqOI1O1J4?autoplay=1&mute=1&loop=1&controls=0&playlist=vzFqOI1O1J4&rel=0&modestbranding=1"
+      allow="autoplay; encrypted-media"
+      title="Background video"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="container hero-content">
     <h1 class="hero-name">ARRAKH</h1>
     <p class="hero-tagline" data-i18n="hero.tagline">
       Game Designer, Programmer, Sound Engineer; an all-round Generalist.
@@ -139,6 +149,24 @@
 
 
 <!-- =====================
+     SHOWREEL
+     ===================== -->
+<section class="showreel">
+  <div class="container">
+    <p class="showreel-label" data-i18n="showreel.label">Showreel</p>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/l_tYWZt7o_g?controls=1&modestbranding=1&rel=0"
+        allowfullscreen
+        loading="lazy"
+        title="Portfolio showreel">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================
      PROFESSIONAL PROJECTS
      ===================== -->
 <section class="projects-professional">
@@ -154,7 +182,15 @@
 
       <!-- Bombergrounds -->
       <article class="project-card">
-        <img class="project-image" src="assets/project-bombergrounds.webp" alt="Bombergrounds" />
+        <div class="project-media">
+          <img class="project-image" src="assets/project-bombergrounds.webp" alt="Bombergrounds" />
+          <div class="project-video">
+            <iframe
+              src="https://www.youtube.com/embed/PWDzhoOW9W8?controls=1&modestbranding=1&rel=0"
+              allowfullscreen loading="lazy" title="Bombergrounds gameplay">
+            </iframe>
+          </div>
+        </div>
         <div class="project-body">
           <h3 class="project-title" data-i18n="projects.bombergrounds.title">Bombergrounds</h3>
           <p class="project-meta">
@@ -182,7 +218,15 @@
 
       <!-- Pamali: The Hungry Witch -->
       <article class="project-card">
-        <img class="project-image" src="assets/img/project-pamali.jpg" alt="Pamali: The Hungry Witch" />
+        <div class="project-media">
+          <img class="project-image" src="assets/img/project-pamali.jpg" alt="Pamali: The Hungry Witch" />
+          <div class="project-video">
+            <iframe
+              src="https://www.youtube.com/embed/SRu0mF4OqyY?controls=1&modestbranding=1&rel=0"
+              allowfullscreen loading="lazy" title="Pamali gameplay">
+            </iframe>
+          </div>
+        </div>
         <div class="project-body">
           <h3 class="project-title" data-i18n="projects.pamali.title">Pamali: The Hungry Witch</h3>
           <p class="project-meta">
@@ -210,7 +254,15 @@
 
       <!-- Rendezvous -->
       <article class="project-card">
-        <img class="project-image" src="assets/img/project-rendezvous.jpg" alt="Rendezvous" />
+        <div class="project-media">
+          <img class="project-image" src="assets/img/project-rendezvous.jpg" alt="Rendezvous" />
+          <div class="project-video">
+            <iframe
+              src="https://www.youtube.com/embed/3BeF7Bqc1AI?controls=1&modestbranding=1&rel=0"
+              allowfullscreen loading="lazy" title="Rendezvous gameplay">
+            </iframe>
+          </div>
+        </div>
         <div class="project-body">
           <h3 class="project-title" data-i18n="projects.rendezvous.title">Rendezvous</h3>
           <p class="project-meta">
