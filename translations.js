@@ -40,7 +40,6 @@ function buildProjectKeys(lang) {
     if (d.platform)    keys[`${px}.platform`]     = d.platform;
     if (d.role)        keys[`${px}.role`]         = d.role;
     if (d.description) keys[`${px}.description`]  = d.description;
-    if (d.description) keys[`${px}.description`]  = d.description;
     if (Array.isArray(d.bullets)) keys[`${px}.bullets`] = d.bullets;
   }
   return keys;
