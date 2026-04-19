@@ -16,7 +16,7 @@
   <link rel="icon" href="https://cloud-1de12d.b-cdn.net/media/iW=192&iH=any/b87420c091ba8b27aa043a5a5f403ddc.png" sizes="192x192" />
 
   <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
-  <link href="https://fonts.bunny.net/css?family=syne:600,700,800|dm-sans:400,500,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=cormorant-garamond:400,500,600,700|dm-sans:400,500,600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -30,7 +30,7 @@
 <nav id="site-nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">ARRAKH</a>
+      <a href="#" class="nav-logo">Arya Rakha</a>
 
       <nav class="nav-links" aria-label="Site sections">
         <a href="#work" data-i18n="nav.work">Work</a>
@@ -63,26 +63,19 @@
      HERO
      ===================== -->
 <section class="hero" id="hero">
-  <div class="container">
-    <div class="hero-grid">
+  <!-- Background GIF: fills hero, dimmed -->
+  <div class="hero-bg">
+    <img src="assets/hero.gif" alt="" aria-hidden="true" />
+  </div>
 
-      <img class="hero-photo" src="assets/img/profile.jpg" alt="Arya Rakha" />
-
-      <div class="hero-text">
-        <h1 class="hero-name">ARRAKH</h1>
-        <p class="hero-tagline" data-i18n="hero.tagline">
-          Game Designer, Programmer, Sound Engineer — all-round Generalist.
-        </p>
-        <div class="hero-cta">
-          <a href="#work" class="btn btn-primary" data-i18n="hero.cta.work">See My Work</a>
-          <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta.contact">Get In Touch</a>
-        </div>
-
-        <div class="hero-gif">
-          <div class="asset-placeholder">ASSET: hero.gif</div>
-        </div>
-      </div>
-
+  <div class="container hero-content">
+    <h1 class="hero-name">Arya Rakha</h1>
+    <p class="hero-tagline" data-i18n="hero.tagline">
+      Game Designer, Programmer, Sound Engineer — all-round Generalist.
+    </p>
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary" data-i18n="hero.cta.work">See My Work</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta.contact">Get In Touch</a>
     </div>
   </div>
 </section>
@@ -155,7 +148,7 @@
       <!-- The Covered -->
       <article class="featured-card card-reverse fade-in">
         <div class="featured-card-media">
-          <div class="asset-placeholder">ASSET: the-covered.jpg</div>
+          <img src="assets/covered.gif" alt="The Covered" />
         </div>
         <div class="featured-card-body">
           <p class="featured-card-meta">
@@ -231,7 +224,7 @@
 
       <!-- The Covered (featured tile) -->
       <div class="work-tile is-featured fade-in">
-        <div class="work-tile-thumb-placeholder">ASSET: the-covered.jpg</div>
+        <img class="work-tile-thumb" src="assets/covered.gif" alt="The Covered" />
         <div class="work-tile-body">
           <p class="work-tile-title" data-i18n="projects.covered.title">The Covered</p>
           <p class="work-tile-meta" data-i18n="projects.covered.studio">Storytale Studio</p>
