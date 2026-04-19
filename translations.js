@@ -17,8 +17,16 @@ import covered       from './projects/covered/data.js';
 import dangdut       from './projects/dangdut/data.js';
 import blocky        from './projects/blocky/data.js';
 import lovebug       from './projects/lovebug/data.js';
+import colosstream   from './projects/colosstream/data.js';
+import hotpawt       from './projects/hotpawt/data.js';
+import memorylane    from './projects/memorylane/data.js';
+import machinations  from './projects/machinations/data.js';
 
-const PROJECTS = [bombergrounds, pamali, rendezvous, covered, dangdut, blocky, lovebug];
+const PROJECTS = [
+  bombergrounds, pamali, rendezvous, covered,
+  dangdut, blocky, lovebug,
+  colosstream, hotpawt, memorylane, machinations,
+];
 
 // Builds flat translation keys from each project's data object.
 function buildProjectKeys(lang) {
@@ -50,7 +58,7 @@ export const TRANSLATIONS = {
     'nav.contact': 'Contact',
 
     // ---- Hero ----
-    'hero.tagline':     'Generalist Developer, Specialist Designer.',
+    'hero.tagline':     'Generalist Game Developer, Specialist Player-centric Designer.',
     'hero.cta.work':    'See My Work',
     'hero.cta.contact': 'Get In Touch',
 
@@ -66,7 +74,7 @@ export const TRANSLATIONS = {
 
     // ---- Section labels ----
     'work.featured.label':   'Selected Work',
-    'work.featured.heading': 'Projects I\'m proud of.',
+    'work.featured.heading': 'My Professional Projects.',
     'work.all.label':        'More Work',
     'work.all.heading':      'Everything else.',
     'work.tile.personal':    'Personal project',
@@ -77,8 +85,7 @@ export const TRANSLATIONS = {
     'projects.playLink':  'Play here',
 
     // ---- Placeholder projects (no data.js yet) ----
-    'projects.ecsteroid.title':  'ECSteroid',
-    'projects.memorylane.title': 'Memory Lane',
+    'projects.ecsteroid.title': 'ECSteroid',
 
     // ---- Testimonials ----
     'testimonials.label':   'Testimonials',
@@ -110,7 +117,7 @@ export const TRANSLATIONS = {
     'nav.contact': 'お問い合わせ',
 
     // ---- Hero ----
-    'hero.tagline':     'ジェネラリスト プログラマー、専門プランナー。',
+    'hero.tagline':     '汎用ゲーム開発者、プレイヤー中心プランナー。',
     'hero.cta.work':    '仕事を見る',
     'hero.cta.contact': 'お問い合わせ',
 
@@ -126,7 +133,7 @@ export const TRANSLATIONS = {
 
     // ---- Section labels ----
     'work.featured.label':   'セレクト作品',
-    'work.featured.heading': '自信を持って紹介できる作品。',
+    'work.featured.heading': 'プロ作品。',
     'work.all.label':        'その他の作品',
     'work.all.heading':      'その他すべて。',
     'work.tile.personal':    '個人プロジェクト',
@@ -137,8 +144,7 @@ export const TRANSLATIONS = {
     'projects.playLink':  'プレイする',
 
     // ---- Placeholder projects ----
-    'projects.ecsteroid.title':  'ECSteroid',
-    'projects.memorylane.title': 'Memory Lane',
+    'projects.ecsteroid.title': 'ECSteroid',
 
     // ---- Testimonials ----
     'testimonials.label':   '推薦の言葉',
