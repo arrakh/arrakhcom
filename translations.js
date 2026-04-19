@@ -18,84 +18,107 @@ const TRANSLATIONS = {
 
     // ---- Navigation ----
     'nav.langSwitch': '日本語',
-    'showreel.label': 'Showreel',
-    'nav.phone': '+62 877 2128 2164',
+    'nav.work':    'Work',
+    'nav.contact': 'Contact',
 
     // ---- Hero ----
-    'hero.tagline': 'Game Designer, Programmer, Sound Engineer; an all-round Generalist.',
+    'hero.tagline':    'Game Designer, Programmer, Sound Engineer — all-round Generalist.',
+    'hero.cta.work':    'See My Work',
+    'hero.cta.contact': 'Get In Touch',
 
-    // ---- About ----
-    'about.label': 'About',
-    'about.heading': 'A little bit <strong>about me</strong>...',
-    'about.body': `
-      <p>Hello! my name is <strong>Arya Rakha</strong>, also known as <strong>Arrakh</strong>.</p>
-      <p>Currently embarking on a 2 year <strong>REPLAY Erasmus Mundus Master in Videogames Technology</strong>, previously a <strong>Game Technology</strong> student at Electronic Engineering Polytechnic Institute of Surabaya.</p>
-      <p>With around <strong>6+ years of experience in the Game Dev Industry</strong> along with my <strong>passion</strong> to learn about all the <strong>nooks and cranny of Game Development</strong>, I've involved myself in multiple projects with roles such as Game Designer, Game Programmer, Network Programmer, Project Management, and many more.</p>
-      <p>I aspire to one day be a Lead Game Designer on a major project. Even then, I hope to <strong>never stop learning</strong>.</p>
-    `,
+    // ---- Bio ----
+    'bio.label':   'Bio',
+    'bio.heading': 'A bit about me.',
+    'bio.bullets': [
+      '8 years of game industry experience across design, programming, and project management.',
+      'Roles held: Game Designer, Game Programmer, Network Programmer, Project Manager.',
+      'Full-stack developer on Bombergrounds — serving 4 million+ active players.',
+      'Erasmus Mundus Master student in Videogames Technology (2-year international program).',
+      'Goal: Lead Game Designer on a major production.',
+    ],
 
-    // ---- Professional Projects ----
-    'projects.professional.label': 'Work',
-    'projects.professional.heading': 'All the <strong>projects</strong> I\'ve been in so far...',
+    // ---- Selected Work ----
+    'work.featured.label':   'Selected Work',
+    'work.featured.heading': 'Projects I\'m proud of.',
 
+    // ---- More Work ----
+    'work.all.label':   'More Work',
+    'work.all.heading': 'Everything else.',
+    'work.tile.personal': 'Personal project',
+
+    // ---- Shared project strings ----
+    'projects.visitSite': 'Visit Site',
+    'projects.steamPage': 'Steam Page',
+    'projects.playLink':  'Play here',
+
+    // ---- Bombergrounds ----
     'projects.bombergrounds.title':    'Bombergrounds',
     'projects.bombergrounds.studio':   'GiganticDuck AB',
     'projects.bombergrounds.platform': 'PC, Android, iOS',
+    'projects.bombergrounds.role': 'Full-stack Game Developer',
     'projects.bombergrounds.description': `
-      <p>Bombergrounds is a <strong>Multiplayer Cross-Platform</strong> action-packed arena inspired by classic bomber games. With more than <strong>4 million users</strong>, the game has garnered a big community of active players. Since its release in 2022, Bombergrounds has received many major updates. Find out more on the <a class="project-link" href="https://www.bombergrounds.com/reborn" target="_blank" rel="noopener">official website</a>.</p>
+      <p>Bombergrounds is a <strong>Multiplayer Cross-Platform</strong> action arena inspired by classic bomber games. With more than <strong>4 million users</strong>, the game has garnered a large community of active players. Find out more on the <a class="accent-link" href="https://www.bombergrounds.com/reborn" target="_blank" rel="noopener">official website</a>.</p>
     `,
-    'projects.bombergrounds.role': 'Role: Full-stack Game Developer',
     'projects.bombergrounds.bullets': [
-      'Implemented and updated most back-end and front-end features of the game, including but not limited to: Loot Boxes, Map Maker, Bomber Pass, Skin Customization and Inventory, Progression, Shop, and many more.',
-      'Worked with Game Designer and Community Manager on community feedback and game balancing across more than 8 major updates.',
-      'Improved performance and loading time of the game by 40%.',
+      'Built and shipped Loot Boxes, Map Maker, Bomber Pass, Shop, Inventory, and Progression systems.',
+      'Partnered with design and community teams on game balancing across 8+ major updates.',
+      'Cut game performance and loading time by 40%.',
     ],
 
+    // ---- The Covered ----
+    'projects.covered.title':    'The Covered',
+    'projects.covered.studio':   'Storytale Studio',
+    'projects.covered.platform': 'PC',
+    'projects.covered.role': 'Game Developer',
+    'projects.covered.description': `
+      <p>A narrative horror experience continuing the Pamali universe. More details coming soon.</p>
+    `,
+    'projects.covered.bullets': [
+      'Placeholder — update with real project bullets.',
+    ],
+
+    // ---- Pamali ----
     'projects.pamali.title':    'Pamali: The Hungry Witch',
     'projects.pamali.studio':   'Storytale Studio',
     'projects.pamali.platform': 'PC',
+    'projects.pamali.role': 'Game Developer',
     'projects.pamali.description': `
-      <p>Pamali is a narrative horror game set in the daily lives of Indonesian society, started on Kickstarter. With the success of the <a class="project-link" href="https://store.steampowered.com/app/854570/Pamali_Indonesian_Folklore_Horror/" target="_blank" rel="noopener">1st chapter</a>, Pamali managed to continue the series up to the 4th chapter, The Hungry Witch. See the <a class="project-link" href="https://store.steampowered.com/app/990932/Pamali_Indonesian_Folklore_Horror__The_Hungry_Witch/" target="_blank" rel="noopener">Steam page</a>.</p>
+      <p>Pamali is a narrative horror game set in the daily lives of Indonesian society, started on Kickstarter. With the success of the <a class="accent-link" href="https://store.steampowered.com/app/854570/Pamali_Indonesian_Folklore_Horror/" target="_blank" rel="noopener">1st chapter</a>, Pamali managed to continue the series up to the 4th chapter, The Hungry Witch. See the <a class="accent-link" href="https://store.steampowered.com/app/990932/Pamali_Indonesian_Folklore_Horror__The_Hungry_Witch/" target="_blank" rel="noopener">Steam page</a>.</p>
     `,
-    'projects.pamali.role': 'Role: Game Developer',
     'projects.pamali.bullets': [
-      'Scripted levels with the provided tool to enrich the world in both Narrative and Gameplay.',
-      'Assisted in the creation of assets including but not limited to: story, audio, marketing, and visual assets.',
-      'Assisted in brainstorming and idea planning sessions.',
+      'Scripted levels using a proprietary tool to enrich both narrative and gameplay.',
+      'Created story, audio, marketing, and visual assets.',
+      'Contributed to brainstorming and design planning sessions.',
     ],
 
+    // ---- Rendezvous ----
     'projects.rendezvous.title':    'Rendezvous',
     'projects.rendezvous.studio':   'Pendopo Studio',
     'projects.rendezvous.platform': 'PC',
+    'projects.rendezvous.role': 'Lead Programmer, Game Designer',
     'projects.rendezvous.description': `
-      <p>Rendezvous is a 2.5D pixel art action-puzzle adventure game set in the dystopian 2064 city of Neo-Surabaya, Indonesia. <a class="project-link" href="https://store.steampowered.com/app/1409300/Rendezvous/" target="_blank" rel="noopener">Download the demo on Steam</a>.</p>
+      <p>Rendezvous is a 2.5D pixel art action-puzzle adventure set in the dystopian 2064 city of Neo-Surabaya, Indonesia. <a class="accent-link" href="https://store.steampowered.com/app/1409300/Rendezvous/" target="_blank" rel="noopener">Download the demo on Steam</a>.</p>
     `,
-    'projects.rendezvous.role': 'Role: Lead Programmer, Game Designer',
     'projects.rendezvous.bullets': [
-      'Managed and led a team of 3 programmers by planning and evaluating tasks every sprint.',
-      'Designed and developed a flexible and sustainable architecture for long-term development.',
-      'Maintained a Technical Design Document to bridge technical knowledge across the project.',
-      'Created tools for programmers and designers to implement new mechanics and levels.',
-      'Participated in critical Level and Game design decisions.',
+      'Led a 3-programmer team across sprint planning and reviews.',
+      'Designed a flexible architecture built for long-term development.',
+      'Maintained a Technical Design Document used across the whole team.',
+      'Built tooling for designers to implement mechanics and levels without code.',
+      'Drove critical level and game design decisions.',
     ],
 
-    // ---- Personal Projects ----
-    'projects.personal.label':   'Personal',
-    'projects.personal.heading': 'Some of my <strong>personal projects</strong>...',
-    'projects.playLink': 'Play here →',
-
+    // ---- Personal projects ----
     'projects.dangdut.title': 'Dangdut Rumble',
-    'projects.dangdut.description': 'DANGDUT RUMBLE is a game about STEALING THE SPOTLIGHT with your giant SPEAKER while jamming to DANGDUT! Connect a microphone and shout to knock your opponent with your sound system. Play with up to 8 friends!',
-
-    'projects.blocky.title': 'Blocky Babel',
-    'projects.blocky.description': 'Blocky Babel is a short strategic building board game where the first player to reach the 3rd level wins! Focused on game feel, and I also learned 3D modelling in Blender while making this.',
-
+    'projects.blocky.title':  'Blocky Babel',
     'projects.lovebug.title': 'Love Bug',
-    'projects.lovebug.description': 'Love_Bug is a game where you prevent your human from loving anyone but you, a computer! Press "0" or "1" to type codes and "Spacebar" to match. Build your combo and gain score! Made for Confession Jam 2.',
+
+    // ---- Placeholder projects ----
+    'projects.ecsteroid.title':  'ECSteroid',
+    'projects.memorylane.title': 'Memory Lane',
 
     // ---- Testimonials ----
     'testimonials.label':   'Testimonials',
-    'testimonials.heading': 'What <strong>people I\'ve worked with</strong> said about me...',
+    'testimonials.heading': 'What people say.',
 
     'testimonials.torikul.quote': '"Arya is a great teammate to work with. Very knowledgeable and insightful, with the capability of complex problem-solving. Whether it\'s technical or management things, you can always discuss them with him."',
     'testimonials.torikul.name': 'Muhammad Torikul Akbar',
@@ -105,8 +128,10 @@ const TRANSLATIONS = {
     'testimonials.nauval.name': 'Nauval',
     'testimonials.nauval.role': 'CEO | Miraimimpi',
 
-    // ---- Footer ----
-    'footer.heading': 'Contact Me!',
+    // ---- Contact ----
+    'contact.heading':       'Let\'s work together.',
+    'contact.cv.programmer': 'CV — Programmer',
+    'contact.cv.designer':   'CV — Game Designer',
   },
 
 
@@ -117,86 +142,109 @@ const TRANSLATIONS = {
 
     // ---- Navigation ----
     'nav.langSwitch': 'English',
-    'showreel.label': 'ショーリール',
-    'nav.phone': '+62 877 2128 2164',
+    'nav.work':    '仕事',
+    'nav.contact': 'お問い合わせ',
 
     // ---- Hero ----
-    'hero.tagline': 'ゲームデザイナー、プログラマー、サウンドエンジニア; オールラウンダーのジェネラリスト。',
+    'hero.tagline':    'ゲームデザイナー、プログラマー、サウンドエンジニア — オールラウンドのジェネラリスト。',
+    'hero.cta.work':    '仕事を見る',
+    'hero.cta.contact': 'お問い合わせ',
 
-    // ---- About ----
-    'about.label': '自己紹介',
-    'about.heading': '<strong>自己紹介</strong>を...',
-    'about.body': `
-      <p>どうも！<strong>Arya Rakha</strong>（アリヤラカー）と申します。ニックは<strong>Arrakh</strong>です！</p>
-      <p>現在、2年間の<strong>REPLAY Erasmus Mundus Master in Videogames Technology</strong>に取り組んでいます。以前はElectronic Engineering Polytechnic Institute of Surabayaで<strong>ゲーム技術の学生</strong>でした。</p>
-      <p><strong>ゲーム開発業界で6年以上の経験</strong>があり、ゲーム開発の隅々まで学びたいという<strong>情熱</strong>を持って、ゲームデザイナー、ゲームプログラマー、ネットワークプログラマー、プロジェクト管理等の役職でさまざまなプロジェクトに参加してきました。</p>
-      <p>夢はいつか<strong>大きなプロジェクトのリードゲームデザイナーになること</strong>。それまでも、<strong>学び続ける</strong>ことをやめないつもりです。</p>
-    `,
+    // ---- Bio ----
+    'bio.label':   '自己紹介',
+    'bio.heading': '私について。',
+    'bio.bullets': [
+      'ゲーム業界での経験8年。デザイン、プログラミング、プロジェクト管理にわたる。',
+      '担当してきた役職: ゲームデザイナー、ゲームプログラマー、ネットワークプログラマー、プロジェクトマネージャー。',
+      'Bombergroundsのフルスタック開発者 — 400万人以上のアクティブプレイヤーにサービスを提供。',
+      'ビデオゲーム技術のErasmus Mundusマスタープログラム在籍中（2年間の国際プログラム）。',
+      '目標: 大規模プロジェクトのリードゲームデザイナー。',
+    ],
 
-    // ---- Professional Projects ----
-    'projects.professional.label': '職歴',
-    'projects.professional.heading': '今までの<strong>プロジェクト</strong>...',
+    // ---- Selected Work ----
+    'work.featured.label':   'セレクト作品',
+    'work.featured.heading': '自信を持って紹介できる作品。',
 
+    // ---- More Work ----
+    'work.all.label':   'その他の作品',
+    'work.all.heading': 'その他すべて。',
+    'work.tile.personal': '個人プロジェクト',
+
+    // ---- Shared project strings ----
+    'projects.visitSite': 'サイトを見る',
+    'projects.steamPage': 'Steamページ',
+    'projects.playLink':  'プレイする',
+
+    // ---- Bombergrounds ----
     'projects.bombergrounds.title':    'Bombergrounds',
     'projects.bombergrounds.studio':   'GiganticDuck AB',
     'projects.bombergrounds.platform': 'PC、Android、iOS',
+    'projects.bombergrounds.role': 'フルスタックゲーム開発者',
     'projects.bombergrounds.description': `
-      <p>Bombergroundsは、クラシックなボンバーゲームにインスパイアされた<strong>マルチプレイヤー・クロスプラットフォーム</strong>のアクションアリーナです。<strong>400万人以上のユーザー</strong>を誇り、2022年のリリース以来、多くの大型アップデートを重ねています。詳細は<a class="project-link" href="https://www.bombergrounds.com/reborn" target="_blank" rel="noopener">公式サイト</a>をご覧ください。</p>
+      <p>Bombergroundsは、クラシックなボンバーゲームにインスパイアされた<strong>マルチプレイヤー・クロスプラットフォーム</strong>のアクションアリーナです。<strong>400万人以上のユーザー</strong>を誇り、大きなコミュニティを形成しています。詳細は<a class="accent-link" href="https://www.bombergrounds.com/reborn" target="_blank" rel="noopener">公式サイト</a>をご覧ください。</p>
     `,
-    'projects.bombergrounds.role': '役職: フルスタックゲーム開発者',
     'projects.bombergrounds.bullets': [
-      'ルートボックス、マップメーカー、ボンバーパス、スキンカスタマイズ、インベントリ、プログレッション、ショップなど、ゲームのバックエンド・フロントエンド機能の多くを実装・更新しました。',
-      'ゲームデザイナーおよびコミュニティマネージャーと協力し、8回以上の大型アップデートにわたってコミュニティのフィードバックとゲームバランスに取り組みました。',
-      'ゲームのパフォーマンスと読み込み時間を40%改善しました。',
+      'ルートボックス、マップメーカー、ボンバーパス、ショップ、インベントリ、プログレッションシステムを構築・リリース。',
+      '8回以上の大型アップデートでデザイン・コミュニティチームと連携し、ゲームバランスを調整。',
+      'ゲームのパフォーマンスと読み込み時間を40%削減。',
     ],
 
+    // ---- The Covered ----
+    'projects.covered.title':    'The Covered',
+    'projects.covered.studio':   'Storytale Studio',
+    'projects.covered.platform': 'PC',
+    'projects.covered.role': 'ゲーム開発者',
+    'projects.covered.description': `
+      <p>Pamaliの世界観を継ぐナラティブホラー体験。詳細は近日公開予定。</p>
+    `,
+    'projects.covered.bullets': [
+      'プレースホルダー — 実際のプロジェクト内容に更新してください。',
+    ],
+
+    // ---- Pamali ----
     'projects.pamali.title':    'Pamali: The Hungry Witch',
     'projects.pamali.studio':   'Storytale Studio',
     'projects.pamali.platform': 'PC',
+    'projects.pamali.role': 'ゲーム開発者',
     'projects.pamali.description': `
-      <p>Pamaliはインドネシア社会の日常を舞台にしたナラティブホラーゲームです。Kickstarterから始まり、<a class="project-link" href="https://store.steampowered.com/app/854570/Pamali_Indonesian_Folklore_Horror/" target="_blank" rel="noopener">第1章</a>の成功を経て第4章まで続いています。<a class="project-link" href="https://store.steampowered.com/app/990932/Pamali_Indonesian_Folklore_Horror__The_Hungry_Witch/" target="_blank" rel="noopener">Steamページ</a>をご覧ください。</p>
+      <p>Pamaliはインドネシア社会の日常を舞台にしたナラティブホラーゲームです。Kickstarterから始まり、<a class="accent-link" href="https://store.steampowered.com/app/854570/Pamali_Indonesian_Folklore_Horror/" target="_blank" rel="noopener">第1章</a>の成功を経て第4章まで続いています。<a class="accent-link" href="https://store.steampowered.com/app/990932/Pamali_Indonesian_Folklore_Horror__The_Hungry_Witch/" target="_blank" rel="noopener">Steamページ</a>をご覧ください。</p>
     `,
-    'projects.pamali.role': '役職: ゲーム開発者',
     'projects.pamali.bullets': [
-      '提供されたツールを使ってレベルをスクリプトし、ナラティブとゲームプレイの両面で世界を豊かにしました。',
-      'ストーリー、オーディオ、マーケティング、ビジュアルアセットなどの制作を支援しました。',
-      'ブレインストーミングやアイデア計画セッションに参加しました。',
+      '独自ツールを使ってレベルをスクリプトし、ナラティブとゲームプレイの両面を豊かにした。',
+      'ストーリー、オーディオ、マーケティング、ビジュアルアセットを制作。',
+      'ブレインストーミングやデザイン計画セッションに貢献。',
     ],
 
+    // ---- Rendezvous ----
     'projects.rendezvous.title':    'Rendezvous',
     'projects.rendezvous.studio':   'Pendopo Studio',
     'projects.rendezvous.platform': 'PC',
+    'projects.rendezvous.role': 'リードプログラマー、ゲームデザイナー',
     'projects.rendezvous.description': `
-      <p>Rendezvousはディストピアの2064年ネオスラバヤを舞台にした2.5Dピクセルアートのアクションパズルアドベンチャーゲームです。<a class="project-link" href="https://store.steampowered.com/app/1409300/Rendezvous/" target="_blank" rel="noopener">Steamでデモをダウンロード</a>できます。</p>
+      <p>ディストピアの2064年ネオスラバヤを舞台にした2.5Dピクセルアートのアクションパズルアドベンチャーゲーム。<a class="accent-link" href="https://store.steampowered.com/app/1409300/Rendezvous/" target="_blank" rel="noopener">Steamでデモをダウンロード</a>できます。</p>
     `,
-    'projects.rendezvous.role': '役職: リードプログラマー、ゲームデザイナー',
     'projects.rendezvous.bullets': [
-      '3人のプログラマーチームを率い、スプリントごとにタスクを計画・評価しました。',
-      '長期開発のための柔軟で持続可能なアーキテクチャを設計・開発しました。',
-      'プロジェクトの技術知識をつなぐテクニカルデザインドキュメントを維持しました。',
-      'プログラマーとデザイナーが新しいメカニクスやレベルを実装するためのツールを作成しました。',
-      'レベルデザインとゲームデザインの重要な決定に参加しました。',
+      '3人のプログラマーチームをスプリント計画とレビューでリード。',
+      '長期開発向けの柔軟なアーキテクチャを設計。',
+      'チーム全体で使うテクニカルデザインドキュメントを維持。',
+      'デザイナーがコードなしでメカニクスとレベルを実装できるツールを構築。',
+      'レベルとゲームデザインの重要な決定を主導。',
     ],
 
-    // ---- Personal Projects ----
-    'projects.personal.label':   '個人プロジェクト',
-    'projects.personal.heading': '私の<strong>個人プロジェクト</strong>...',
-    'projects.playLink': 'プレイする →',
-
+    // ---- Personal projects ----
     'projects.dangdut.title': 'Dangdut Rumble',
-    'projects.dangdut.description': 'DANGDUT RUMBLEは、巨大なスピーカーでDANGDUTの音楽を流しながら、スポットライトを奪い合うゲームです！マイクを接続して叫んで相手を倒しましょう。最大8人でプレイできます！',
-
-    'projects.blocky.title': 'Blocky Babel',
-    'projects.blocky.description': 'Blocky Babelは、3段目に最初に到達したプレイヤーが勝つ短い戦略的なビルディングボードゲームです。ゲームフィールに重点を置き、制作中にBlenderで3Dモデリングも習得しました。',
-
+    'projects.blocky.title':  'Blocky Babel',
     'projects.lovebug.title': 'Love Bug',
-    'projects.lovebug.description': 'Love_Bugはコンピューターであるあなたが、人間が他の誰かを愛さないようにするゲームです！「0」か「1」を押してコードを入力し、「スペースバー」でマッチさせましょう。Confession Jam 2のために制作しました。',
+
+    // ---- Placeholder projects ----
+    'projects.ecsteroid.title':  'ECSteroid',
+    'projects.memorylane.title': 'Memory Lane',
 
     // ---- Testimonials ----
     'testimonials.label':   '推薦の言葉',
-    'testimonials.heading': '過去の<strong>同僚からの推薦</strong>...',
+    'testimonials.heading': '同僚からの推薦。',
 
-    'testimonials.torikul.quote': '「Aryaは素晴らしいチームメイトです。ゲーム開発の知識が広く、洞察力が高く、複雑な問題解決能力も素晴らしいです。技術的なことでも管理的なことでも、いつでも彼に相談できます。」',
+    'testimonials.torikul.quote': '「Aryaは素晴らしいチームメイトです。ゲーム開発の知識が広く、洞察力が高く、複雑な問題解決能力も優れています。技術的なことでも管理的なことでも、いつでも彼に相談できます。」',
     'testimonials.torikul.name': 'Muhammad Torikul Akbar',
     'testimonials.torikul.role': 'Founder | Pendopo Studio',
 
@@ -204,7 +252,9 @@ const TRANSLATIONS = {
     'testimonials.nauval.name': 'Nauval',
     'testimonials.nauval.role': 'CEO | Miraimimpi',
 
-    // ---- Footer ----
-    'footer.heading': 'お問い合わせ',
+    // ---- Contact ----
+    'contact.heading':       'ご一緒しましょう。',
+    'contact.cv.programmer': 'CV — プログラマー',
+    'contact.cv.designer':   'CV — ゲームデザイナー',
   },
 };

@@ -4,28 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- SEO -->
   <title data-i18n="meta.title">Arya Rakha || Game Developer Portfolio</title>
-  <meta name="description" content="Arya Rakha (arrakh) — game developer, programmer, sound engineer. Portfolio of game development projects and experience." />
+  <meta name="description" content="Arya Rakha (Arrakh) — game developer, programmer, sound engineer. Portfolio of game development projects and experience." />
 
-  <!-- Open Graph -->
   <meta property="og:site_name" content="Arya Rakha || Game Developer Portfolio" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Arya Rakha || Game Developer Portfolio" />
-  <meta property="og:description" content="Game Designer, Programmer, Sound Engineer; an all-round Generalist." />
+  <meta property="og:description" content="Game Designer, Programmer, Sound Engineer — all-round Generalist." />
 
-  <!-- Favicon (hosted on CDN) -->
   <link rel="icon" href="https://cloud-1de12d.b-cdn.net/media/iW=32&iH=any/b87420c091ba8b27aa043a5a5f403ddc.png" sizes="32x32" />
   <link rel="icon" href="https://cloud-1de12d.b-cdn.net/media/iW=192&iH=any/b87420c091ba8b27aa043a5a5f403ddc.png" sizes="192x192" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
-  <link href="https://fonts.bunny.net/css?family=Josefin+Sans:400,700|Overpass:400,600,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=syne:600,700,800|dm-sans:400,500,600&display=swap" rel="stylesheet" />
 
-  <!-- Icons (Font Awesome free) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -33,27 +27,22 @@
 <!-- =====================
      NAV
      ===================== -->
-<nav>
+<nav id="site-nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">ARRAKH</a>
+      <a href="#" class="nav-logo">ARRAKH</a>
+
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
 
       <div class="nav-right">
-        <!-- Contact icons — desktop only (hidden on mobile via CSS) -->
-        <div class="nav-contact">
-          <a href="tel:+6287721282164" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
-          <a href="mailto:arrakhpra@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/arrakh/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://discordapp.com/users/140649852810952704/" target="_blank" rel="noopener" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
-        </div>
-
-        <!-- Language switcher -->
         <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
           <img id="lang-flag" src="assets/img/flag-japan.png" alt="Japanese" />
           <span data-i18n="nav.langSwitch">日本語</span>
         </button>
 
-        <!-- Hamburger (mobile only, hidden on desktop via CSS) -->
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
           <span></span>
           <span></span>
@@ -63,24 +52,9 @@
     </div>
   </div>
 
-  <!-- Mobile drawer -->
   <div class="mobile-menu" id="mobile-menu">
-    <a href="tel:+6287721282164">
-      <i class="fa-solid fa-phone"></i>
-      <span data-i18n="nav.phone">+62 877 2128 2164</span>
-    </a>
-    <a href="mailto:arrakhpra@gmail.com">
-      <i class="fa-solid fa-envelope"></i>
-      arrakhpra@gmail.com
-    </a>
-    <a href="https://www.linkedin.com/in/arrakh/" target="_blank" rel="noopener">
-      <i class="fa-brands fa-linkedin"></i>
-      LinkedIn
-    </a>
-    <a href="https://discordapp.com/users/140649852810952704/" target="_blank" rel="noopener">
-      <i class="fa-brands fa-discord"></i>
-      Discord
-    </a>
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
   </div>
 </nav>
 
@@ -88,203 +62,143 @@
 <!-- =====================
      HERO
      ===================== -->
-<section class="hero">
-  <!-- Background video: autoplay, muted, looping, dimmed via CSS -->
-  <div class="hero-video-bg">
-    <iframe
-      src="https://www.youtube.com/embed/vzFqOI1O1J4?autoplay=1&mute=1&loop=1&controls=0&playlist=vzFqOI1O1J4&rel=0&modestbranding=1"
-      allow="autoplay; encrypted-media"
-      title="Background video"
-      loading="lazy">
-    </iframe>
-  </div>
-
-  <div class="container hero-content">
-    <h1 class="hero-name">ARRAKH</h1>
-    <p class="hero-tagline" data-i18n="hero.tagline">
-      Game Designer, Programmer, Sound Engineer; an all-round Generalist.
-    </p>
-  </div>
-</section>
-
-
-<!-- =====================
-     ABOUT
-     ===================== -->
-<section class="about">
+<section class="hero" id="hero">
   <div class="container">
-    <div class="section-heading">
-      <p class="section-label" data-i18n="about.label">About</p>
-      <h2 data-i18n-html="about.heading">A little bit <strong>about me</strong>...</h2>
-    </div>
+    <div class="hero-grid">
 
-    <div class="about-grid">
-      <img class="about-photo" src="assets/img/profile.jpg" alt="Arya Rakha" />
+      <img class="hero-photo" src="assets/img/profile.jpg" alt="Arya Rakha" />
 
-      <div class="about-text" data-i18n-html="about.body">
-        <p>
-          Hello! my name is <strong>Arya Rakha</strong>, also known as <strong>Arrakh</strong>.
+      <div class="hero-text">
+        <h1 class="hero-name">ARRAKH</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">
+          Game Designer, Programmer, Sound Engineer — all-round Generalist.
         </p>
-        <p>
-          Currently embarking on a 2 year
-          <strong>REPLAY Erasmus Mundus Master in Videogames Technology</strong>,
-          previously a <strong>Game Technology</strong> student at
-          Electronic Engineering Polytechnic Institute of Surabaya.
-        </p>
-        <p>
-          With around <strong>6+ years of experience in the Game Dev Industry</strong>
-          along with my <strong>passion</strong> to learn about all the
-          <strong>nooks and cranny of Game Development</strong>,
-          I've involved myself in multiple projects with roles such as
-          Game Designer, Game Programmer, Network Programmer, Project Management, and many more.
-        </p>
-        <p>
-          I aspire to one day be a Lead Game Designer on a major project.
-          Even then, I hope to <strong>never stop learning</strong>.
-        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary" data-i18n="hero.cta.work">See My Work</a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta.contact">Get In Touch</a>
+        </div>
+
+        <div class="hero-gif">
+          <div class="asset-placeholder">ASSET: hero.gif</div>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
 
 
 <!-- =====================
-     SHOWREEL
+     BIO
      ===================== -->
-<section class="showreel">
+<section class="bio" id="bio">
   <div class="container">
-    <p class="showreel-label" data-i18n="showreel.label">Showreel</p>
-    <div class="video-wrapper">
-      <iframe
-        src="https://www.youtube.com/embed/l_tYWZt7o_g?controls=1&modestbranding=1&rel=0"
-        allowfullscreen
-        loading="lazy"
-        title="Portfolio showreel">
-      </iframe>
+    <div class="bio-inner">
+
+      <div class="bio-heading fade-in">
+        <p class="label" data-i18n="bio.label">Bio</p>
+        <h2 data-i18n="bio.heading">A bit about me.</h2>
+      </div>
+
+      <ul class="bio-bullets fade-in" data-i18n-list="bio.bullets">
+        <li>8 years of game industry experience across design, programming, and management.</li>
+        <li>Roles: Game Designer, Game Programmer, Network Programmer, Project Manager.</li>
+        <li>Full-stack developer on Bombergrounds, serving 4 million+ active players.</li>
+        <li>Erasmus Mundus Master student in Videogames Technology.</li>
+        <li>Goal: Lead Game Designer on a major production.</li>
+      </ul>
+
     </div>
   </div>
 </section>
 
 
 <!-- =====================
-     PROFESSIONAL PROJECTS
+     SELECTED WORK
      ===================== -->
-<section class="projects-professional">
+<section class="work-featured" id="work">
   <div class="container">
-    <div class="section-heading">
-      <p class="section-label" data-i18n="projects.professional.label">Work</p>
-      <h2 data-i18n-html="projects.professional.heading">
-        All the <strong>projects</strong> I've been in so far...
-      </h2>
+    <div class="section-heading fade-in">
+      <p class="label" data-i18n="work.featured.label">Selected Work</p>
+      <h2 data-i18n="work.featured.heading">Projects I'm proud of.</h2>
     </div>
 
-    <div class="project-list">
+    <div class="featured-list">
 
       <!-- Bombergrounds -->
-      <article class="project-card">
-        <div class="project-media">
-          <img class="project-image" src="assets/project-bombergrounds.webp" alt="Bombergrounds" />
-          <div class="project-video">
-            <iframe
-              src="https://www.youtube.com/embed/PWDzhoOW9W8?controls=1&modestbranding=1&rel=0"
-              allowfullscreen loading="lazy" title="Bombergrounds gameplay">
-            </iframe>
-          </div>
+      <article class="featured-card fade-in">
+        <div class="featured-card-media">
+          <img src="assets/project-bombergrounds.webp" alt="Bombergrounds" />
         </div>
-        <div class="project-body">
-          <h3 class="project-title" data-i18n="projects.bombergrounds.title">Bombergrounds</h3>
-          <p class="project-meta">
+        <div class="featured-card-body">
+          <p class="featured-card-meta">
             <span data-i18n="projects.bombergrounds.studio">GiganticDuck AB</span>
-            &mdash;
+            &nbsp;·&nbsp;
             <span data-i18n="projects.bombergrounds.platform">PC, Android, iOS</span>
           </p>
-          <div class="project-description" data-i18n-html="projects.bombergrounds.description">
-            <p>
-              Bombergrounds is a <strong>Multiplayer Cross-Platform</strong> action-packed arena
-              inspired by classic bomber games. With more than <strong>4 million users</strong>,
-              the game has garnered a big community of active players. Since its release in 2022,
-              Bombergrounds has received many major updates. Find out more on the
-              <a class="project-link" href="https://www.bombergrounds.com/reborn" target="_blank" rel="noopener">official website</a>.
-            </p>
+          <h3 class="featured-card-title" data-i18n="projects.bombergrounds.title">Bombergrounds</h3>
+          <p class="featured-card-role" data-i18n="projects.bombergrounds.role">Full-stack Game Developer</p>
+          <div class="featured-card-desc" data-i18n-html="projects.bombergrounds.description">
+            <p>Bombergrounds is a <strong>Multiplayer Cross-Platform</strong> action arena inspired by classic bomber games. With more than <strong>4 million users</strong>, the game has garnered a big community of active players. Find out more on the <a class="accent-link" href="https://www.bombergrounds.com/reborn" target="_blank" rel="noopener">official website</a>.</p>
           </div>
-          <p class="project-role" data-i18n="projects.bombergrounds.role">Role: Full-stack Game Developer</p>
-          <ul class="project-bullets" data-i18n-list="projects.bombergrounds.bullets">
-            <li>Implemented and updated most back-end and front-end features of the game, including but not limited to: Loot Boxes, Map Maker, Bomber Pass, Skin Customization and Inventory, Progression, Shop, and many more.</li>
-            <li>Worked with Game Designer and Community Manager on community feedback and game balancing across more than 8 major updates.</li>
-            <li>Improved performance and loading time of the game by 40%.</li>
+          <ul class="featured-card-bullets" data-i18n-list="projects.bombergrounds.bullets">
+            <li>Built and shipped Loot Boxes, Map Maker, Bomber Pass, Shop, Inventory, and Progression systems.</li>
+            <li>Partnered with design and community teams across 8+ major updates.</li>
+            <li>Cut game performance and loading time by 40%.</li>
           </ul>
+          <div class="featured-card-links">
+            <a class="btn btn-ghost" href="https://www.bombergrounds.com/reborn" target="_blank" rel="noopener" data-i18n="projects.visitSite">Visit Site</a>
+          </div>
         </div>
       </article>
 
-      <!-- Pamali: The Hungry Witch -->
-      <article class="project-card">
-        <div class="project-media">
-          <img class="project-image" src="assets/img/project-pamali.jpg" alt="Pamali: The Hungry Witch" />
-          <div class="project-video">
-            <iframe
-              src="https://www.youtube.com/embed/SRu0mF4OqyY?controls=1&modestbranding=1&rel=0"
-              allowfullscreen loading="lazy" title="Pamali gameplay">
-            </iframe>
-          </div>
+      <!-- The Covered -->
+      <article class="featured-card card-reverse fade-in">
+        <div class="featured-card-media">
+          <div class="asset-placeholder">ASSET: the-covered.jpg</div>
         </div>
-        <div class="project-body">
-          <h3 class="project-title" data-i18n="projects.pamali.title">Pamali: The Hungry Witch</h3>
-          <p class="project-meta">
-            <span data-i18n="projects.pamali.studio">Storytale Studio</span>
-            &mdash;
-            <span data-i18n="projects.pamali.platform">PC</span>
+        <div class="featured-card-body">
+          <p class="featured-card-meta">
+            <span data-i18n="projects.covered.studio">Storytale Studio</span>
+            &nbsp;·&nbsp;
+            <span data-i18n="projects.covered.platform">PC</span>
           </p>
-          <div class="project-description" data-i18n-html="projects.pamali.description">
-            <p>
-              Pamali is a narrative horror game set in the daily lives of Indonesian society,
-              started on Kickstarter. With the success of the
-              <a class="project-link" href="https://store.steampowered.com/app/854570/Pamali_Indonesian_Folklore_Horror/" target="_blank" rel="noopener">1st chapter</a>,
-              Pamali managed to continue the series up to the 4th chapter, The Hungry Witch.
-              See the <a class="project-link" href="https://store.steampowered.com/app/990932/Pamali_Indonesian_Folklore_Horror__The_Hungry_Witch/" target="_blank" rel="noopener">Steam page</a>.
-            </p>
+          <h3 class="featured-card-title" data-i18n="projects.covered.title">The Covered</h3>
+          <p class="featured-card-role" data-i18n="projects.covered.role">Game Developer</p>
+          <div class="featured-card-desc" data-i18n-html="projects.covered.description">
+            <p>A narrative horror experience continuing the Pamali universe. Details coming soon.</p>
           </div>
-          <p class="project-role" data-i18n="projects.pamali.role">Role: Game Developer</p>
-          <ul class="project-bullets" data-i18n-list="projects.pamali.bullets">
-            <li>Scripted levels with the provided tool to enrich the world in both Narrative and Gameplay.</li>
-            <li>Assisted in the creation of assets including but not limited to: story, audio, marketing, and visual assets.</li>
-            <li>Assisted in brainstorming and idea planning sessions.</li>
+          <ul class="featured-card-bullets" data-i18n-list="projects.covered.bullets">
+            <li>Placeholder — update with real bullets.</li>
           </ul>
         </div>
       </article>
 
       <!-- Rendezvous -->
-      <article class="project-card">
-        <div class="project-media">
-          <img class="project-image" src="assets/img/project-rendezvous.jpg" alt="Rendezvous" />
-          <div class="project-video">
-            <iframe
-              src="https://www.youtube.com/embed/3BeF7Bqc1AI?controls=1&modestbranding=1&rel=0"
-              allowfullscreen loading="lazy" title="Rendezvous gameplay">
-            </iframe>
-          </div>
+      <article class="featured-card fade-in">
+        <div class="featured-card-media">
+          <img src="assets/img/project-rendezvous.jpg" alt="Rendezvous" />
         </div>
-        <div class="project-body">
-          <h3 class="project-title" data-i18n="projects.rendezvous.title">Rendezvous</h3>
-          <p class="project-meta">
+        <div class="featured-card-body">
+          <p class="featured-card-meta">
             <span data-i18n="projects.rendezvous.studio">Pendopo Studio</span>
-            &mdash;
+            &nbsp;·&nbsp;
             <span data-i18n="projects.rendezvous.platform">PC</span>
           </p>
-          <div class="project-description" data-i18n-html="projects.rendezvous.description">
-            <p>
-              Rendezvous is a 2.5D pixel art action-puzzle adventure game set in the
-              dystopian 2064 city of Neo-Surabaya, Indonesia.
-              <a class="project-link" href="https://store.steampowered.com/app/1409300/Rendezvous/" target="_blank" rel="noopener">Download the demo on Steam</a>.
-            </p>
+          <h3 class="featured-card-title" data-i18n="projects.rendezvous.title">Rendezvous</h3>
+          <p class="featured-card-role" data-i18n="projects.rendezvous.role">Lead Programmer, Game Designer</p>
+          <div class="featured-card-desc" data-i18n-html="projects.rendezvous.description">
+            <p>A 2.5D pixel art action-puzzle adventure set in the dystopian 2064 city of Neo-Surabaya, Indonesia. <a class="accent-link" href="https://store.steampowered.com/app/1409300/Rendezvous/" target="_blank" rel="noopener">Download the demo on Steam</a>.</p>
           </div>
-          <p class="project-role" data-i18n="projects.rendezvous.role">Role: Lead Programmer, Game Designer</p>
-          <ul class="project-bullets" data-i18n-list="projects.rendezvous.bullets">
-            <li>Managed and led a team of 3 programmers by planning and evaluating tasks every sprint.</li>
-            <li>Designed and developed a flexible and sustainable architecture for long-term development.</li>
-            <li>Maintained a Technical Design Document to bridge technical knowledge across the project.</li>
-            <li>Created tools for programmers and designers to implement new mechanics and levels.</li>
-            <li>Participated in critical Level and Game design decisions.</li>
+          <ul class="featured-card-bullets" data-i18n-list="projects.rendezvous.bullets">
+            <li>Led a 3-programmer team across sprint planning and reviews.</li>
+            <li>Designed a flexible architecture built for long-term development.</li>
+            <li>Maintained a Technical Design Document used across the whole team.</li>
+            <li>Built tooling for designers to implement mechanics and levels without code.</li>
           </ul>
+          <div class="featured-card-links">
+            <a class="btn btn-ghost" href="https://store.steampowered.com/app/1409300/Rendezvous/" target="_blank" rel="noopener" data-i18n="projects.steamPage">Steam Page</a>
+          </div>
         </div>
       </article>
 
@@ -294,66 +208,103 @@
 
 
 <!-- =====================
-     PERSONAL PROJECTS
+     MORE WORK
      ===================== -->
-<section class="projects-personal">
+<section class="work-all" id="more-work">
   <div class="container">
-    <div class="section-heading">
-      <p class="section-label" data-i18n="projects.personal.label">Personal</p>
-      <h2 data-i18n-html="projects.personal.heading">
-        Some of my <strong>personal projects</strong>...
-      </h2>
+    <div class="section-heading fade-in">
+      <p class="label" data-i18n="work.all.label">More Work</p>
+      <h2 data-i18n="work.all.heading">Everything else.</h2>
     </div>
 
-    <div class="personal-grid">
+    <div class="work-grid">
+
+      <!-- Bombergrounds (featured tile) -->
+      <div class="work-tile is-featured fade-in">
+        <img class="work-tile-thumb" src="assets/project-bombergrounds.webp" alt="Bombergrounds" />
+        <div class="work-tile-body">
+          <p class="work-tile-title" data-i18n="projects.bombergrounds.title">Bombergrounds</p>
+          <p class="work-tile-meta">GiganticDuck AB &nbsp;·&nbsp; PC, Android, iOS</p>
+          <a class="work-tile-link" href="https://www.bombergrounds.com/reborn" target="_blank" rel="noopener" data-i18n="projects.visitSite">Visit Site</a>
+        </div>
+      </div>
+
+      <!-- The Covered (featured tile) -->
+      <div class="work-tile is-featured fade-in">
+        <div class="work-tile-thumb-placeholder">ASSET: the-covered.jpg</div>
+        <div class="work-tile-body">
+          <p class="work-tile-title" data-i18n="projects.covered.title">The Covered</p>
+          <p class="work-tile-meta" data-i18n="projects.covered.studio">Storytale Studio</p>
+        </div>
+      </div>
+
+      <!-- Rendezvous (featured tile) -->
+      <div class="work-tile is-featured fade-in">
+        <img class="work-tile-thumb" src="assets/img/project-rendezvous.jpg" alt="Rendezvous" />
+        <div class="work-tile-body">
+          <p class="work-tile-title" data-i18n="projects.rendezvous.title">Rendezvous</p>
+          <p class="work-tile-meta">Pendopo Studio &nbsp;·&nbsp; PC</p>
+          <a class="work-tile-link" href="https://store.steampowered.com/app/1409300/Rendezvous/" target="_blank" rel="noopener" data-i18n="projects.steamPage">Steam Page</a>
+        </div>
+      </div>
+
+      <!-- Pamali -->
+      <div class="work-tile fade-in">
+        <img class="work-tile-thumb" src="assets/img/project-pamali.jpg" alt="Pamali: The Hungry Witch" />
+        <div class="work-tile-body">
+          <p class="work-tile-title" data-i18n="projects.pamali.title">Pamali: The Hungry Witch</p>
+          <p class="work-tile-meta">Storytale Studio &nbsp;·&nbsp; PC</p>
+          <a class="work-tile-link" href="https://store.steampowered.com/app/990932/Pamali_Indonesian_Folklore_Horror__The_Hungry_Witch/" target="_blank" rel="noopener" data-i18n="projects.steamPage">Steam Page</a>
+        </div>
+      </div>
 
       <!-- Dangdut Rumble -->
-      <article class="personal-card">
-        <img class="personal-card-image" src="assets/img/project-dangdut-rumble.png" alt="Dangdut Rumble" />
-        <div class="personal-card-body">
-          <h3 class="personal-card-title" data-i18n="projects.dangdut.title">Dangdut Rumble</h3>
-          <p class="personal-card-desc" data-i18n="projects.dangdut.description">
-            DANGDUT RUMBLE is a game about STEALING THE SPOTLIGHT with your giant SPEAKER while
-            jamming to DANGDUT! Connect a microphone and shout to knock your opponent with your
-            sound system. Play with up to 8 friends!
-          </p>
-          <a class="project-link" href="https://arrakh.itch.io/dangdutrumble" target="_blank" rel="noopener" data-i18n="projects.playLink">
-            Play here &rarr;
-          </a>
+      <div class="work-tile fade-in">
+        <img class="work-tile-thumb" src="assets/img/project-dangdut-rumble.png" alt="Dangdut Rumble" />
+        <div class="work-tile-body">
+          <p class="work-tile-title" data-i18n="projects.dangdut.title">Dangdut Rumble</p>
+          <p class="work-tile-meta" data-i18n="work.tile.personal">Personal</p>
+          <a class="work-tile-link" href="https://arrakh.itch.io/dangdutrumble" target="_blank" rel="noopener" data-i18n="projects.playLink">Play here</a>
         </div>
-      </article>
+      </div>
 
       <!-- Blocky Babel -->
-      <article class="personal-card">
-        <img class="personal-card-image" src="assets/img/project-blocky-babel.png" alt="Blocky Babel" />
-        <div class="personal-card-body">
-          <h3 class="personal-card-title" data-i18n="projects.blocky.title">Blocky Babel</h3>
-          <p class="personal-card-desc" data-i18n="projects.blocky.description">
-            Blocky Babel is a short strategic building board game where the first player to reach
-            the 3rd level wins! Focused on game feel, and I also learned 3D modelling in Blender
-            while making this.
-          </p>
-          <a class="project-link" href="https://arrakh.itch.io/blocky-babel" target="_blank" rel="noopener" data-i18n="projects.playLink">
-            Play here &rarr;
-          </a>
+      <div class="work-tile fade-in">
+        <img class="work-tile-thumb" src="assets/img/project-blocky-babel.png" alt="Blocky Babel" />
+        <div class="work-tile-body">
+          <p class="work-tile-title" data-i18n="projects.blocky.title">Blocky Babel</p>
+          <p class="work-tile-meta" data-i18n="work.tile.personal">Personal</p>
+          <a class="work-tile-link" href="https://arrakh.itch.io/blocky-babel" target="_blank" rel="noopener" data-i18n="projects.playLink">Play here</a>
         </div>
-      </article>
+      </div>
 
       <!-- Love Bug -->
-      <article class="personal-card">
-        <img class="personal-card-image" src="assets/img/project-love-bug.png" alt="Love Bug" />
-        <div class="personal-card-body">
-          <h3 class="personal-card-title" data-i18n="projects.lovebug.title">Love Bug</h3>
-          <p class="personal-card-desc" data-i18n="projects.lovebug.description">
-            Love_Bug is a game where you prevent your human from loving anyone but you, a computer!
-            Press "0" or "1" to type codes and "Spacebar" to match. Build your combo and gain score!
-            Made for Confession Jam 2.
-          </p>
-          <a class="project-link" href="https://arrakh.itch.io/love-bug" target="_blank" rel="noopener" data-i18n="projects.playLink">
-            Play here &rarr;
-          </a>
+      <div class="work-tile fade-in">
+        <img class="work-tile-thumb" src="assets/img/project-love-bug.png" alt="Love Bug" />
+        <div class="work-tile-body">
+          <p class="work-tile-title" data-i18n="projects.lovebug.title">Love Bug</p>
+          <p class="work-tile-meta" data-i18n="work.tile.personal">Personal</p>
+          <a class="work-tile-link" href="https://arrakh.itch.io/love-bug" target="_blank" rel="noopener" data-i18n="projects.playLink">Play here</a>
         </div>
-      </article>
+      </div>
+
+      <!-- ECSteroid (placeholder) -->
+      <div class="work-tile fade-in">
+        <div class="work-tile-thumb-placeholder">ASSET: ecsteroid.png</div>
+        <div class="work-tile-body">
+          <p class="work-tile-title" data-i18n="projects.ecsteroid.title">ECSteroid</p>
+          <p class="work-tile-meta" data-i18n="work.tile.personal">Personal</p>
+        </div>
+      </div>
+
+      <!-- Memory Lane (placeholder) -->
+      <div class="work-tile fade-in">
+        <div class="work-tile-thumb-placeholder">ASSET: memorylane.png</div>
+        <div class="work-tile-body">
+          <p class="work-tile-title" data-i18n="projects.memorylane.title">Memory Lane</p>
+          <p class="work-tile-meta" data-i18n="work.tile.personal">Personal</p>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -363,18 +314,16 @@
 <!-- =====================
      TESTIMONIALS
      ===================== -->
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
   <div class="container">
-    <div class="section-heading">
-      <p class="section-label" data-i18n="testimonials.label">Testimonials</p>
-      <h2 data-i18n-html="testimonials.heading">
-        What <strong>people I've worked with</strong> said about me...
-      </h2>
+    <div class="section-heading fade-in">
+      <p class="label" data-i18n="testimonials.label">Testimonials</p>
+      <h2 data-i18n="testimonials.heading">What people say.</h2>
     </div>
 
     <div class="testimonials-grid">
 
-      <div class="testimonial-card">
+      <div class="testimonial-card fade-in">
         <p class="testimonial-quote" data-i18n="testimonials.torikul.quote">
           "Arya is a great teammate to work with. Very knowledgeable and insightful, with the
           capability of complex problem-solving. Whether it's technical or management things,
@@ -389,7 +338,7 @@
         </div>
       </div>
 
-      <div class="testimonial-card">
+      <div class="testimonial-card fade-in">
         <p class="testimonial-quote" data-i18n="testimonials.nauval.quote">
           "He's undoubtedly good. A very team player with high passion for games in all scales
           and genres. You can't go wrong trusting management and designing stuff to Arya due to
@@ -410,32 +359,45 @@
 
 
 <!-- =====================
-     FOOTER / CONTACT
+     CONTACT
      ===================== -->
-<footer>
+<section class="contact" id="contact">
   <div class="container">
-    <h2 class="footer-heading" data-i18n="footer.heading">Contact Me!</h2>
-    <div class="contact-links">
-      <a class="contact-link" href="tel:+6287721282164">
-        <i class="fa-solid fa-phone"></i>
-        <span data-i18n="nav.phone">+62 877 2128 2164</span>
+    <h2 class="contact-heading fade-in" data-i18n="contact.heading">Let's work together.</h2>
+
+    <div class="cv-downloads fade-in">
+      <a class="btn btn-primary" href="assets/cv-programmer.pdf" download>
+        <i class="fa-solid fa-download"></i>
+        <span data-i18n="contact.cv.programmer">CV — Programmer</span>
       </a>
+      <a class="btn btn-ghost" href="assets/cv-designer.pdf" download>
+        <i class="fa-solid fa-download"></i>
+        <span data-i18n="contact.cv.designer">CV — Game Designer</span>
+      </a>
+    </div>
+
+    <div class="contact-links fade-in">
       <a class="contact-link" href="mailto:arrakhpra@gmail.com">
         <i class="fa-solid fa-envelope"></i>
-        arrakhpra@gmail.com
+        <span>Email</span>
       </a>
       <a class="contact-link" href="https://www.linkedin.com/in/arrakh/" target="_blank" rel="noopener">
         <i class="fa-brands fa-linkedin"></i>
-        LinkedIn
+        <span>LinkedIn</span>
       </a>
       <a class="contact-link" href="https://discordapp.com/users/140649852810952704/" target="_blank" rel="noopener">
         <i class="fa-brands fa-discord"></i>
-        Discord
+        <span>Discord</span>
+      </a>
+      <a class="contact-link" href="https://arrakh.itch.io/" target="_blank" rel="noopener">
+        <i class="fa-brands fa-itch-io"></i>
+        <span>itch.io</span>
       </a>
     </div>
+
     <p class="footer-credit">© 2025 Arya Rakha</p>
   </div>
-</footer>
+</section>
 
 
 <!-- =====================
@@ -444,10 +406,30 @@
 <script src="translations.js"></script>
 <script src="i18n.js"></script>
 <script>
-  // Mobile hamburger menu toggle
+  // Nav backdrop blur on scroll
+  const nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // Mobile hamburger
   const menuToggle = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
   menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  });
+
+  // Scroll fade-in
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        fadeObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 </script>
 
 </body>
