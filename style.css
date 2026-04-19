@@ -354,8 +354,8 @@ nav.scrolled {
   color: var(--clr-white);
   margin-bottom: 14px;
   text-shadow:
-    0 2px 32px rgba(0, 0, 0, 0.95),
-    0 1px 8px  rgba(0, 0, 0, 0.85);
+    0 1px  4px rgba(0, 0, 0, 0.95),
+    0 2px 16px rgba(0, 0, 0, 0.8);
 }
 
 .hero-tagline {
@@ -364,7 +364,14 @@ nav.scrolled {
   max-width: 480px;
   margin-bottom: 28px;
   line-height: 1.65;
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.8);
+  text-shadow:
+    0 0   6px rgba(0, 0, 0, 1),
+    0 0  16px rgba(0, 0, 0, 1),
+    0 0  40px rgba(0, 0, 0, 1),
+    0 1px  4px rgba(0, 0, 0, 1),
+    0 2px 48px rgba(0, 0, 0, 1),
+    0 4px 96px rgba(0, 0, 0, 1),
+    0 8px 140px rgba(0, 0, 0, 1);
 }
 
 .hero-cta {
