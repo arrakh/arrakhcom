@@ -13,7 +13,7 @@
   --clr-muted:     rgba(255, 255, 255, 0.5);
   --clr-border:    rgba(255, 255, 255, 0.08);
 
-  --font-display: 'Cormorant Garamond', serif;
+  --font-display: 'Raleway', sans-serif;
   --font-body:    'DM Sans', sans-serif;
 
   --max-width:  1200px;
@@ -279,14 +279,12 @@ nav.scrolled {
    ===================== */
 .hero {
   position: relative;
-  min-height: 100svh;
-  min-height: 100vh;
+  min-height: 25vh;
   display: flex;
   align-items: center;
   background: var(--clr-bg);
-  padding-block: 120px 100px;
+  padding-block: 80px 72px;
   overflow: hidden;
-  text-align: center;
 }
 
 /* Background GIF: covers entire hero, dimmed */
@@ -309,36 +307,70 @@ nav.scrolled {
 .hero-content {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
+
+.hero-grid {
+  display: grid;
+  gap: 36px;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .hero-grid {
+    grid-template-columns: auto 1fr;
+    gap: 48px;
+  }
+}
+
+.hero-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+  display: block;
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+    margin-inline: 0;
+  }
+}
+
+.hero-text {}
 
 .hero-name {
   font-family: var(--font-display);
-  font-size: clamp(52px, 11vw, 110px);
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: clamp(36px, 7vw, 72px);
+  font-weight: 800;
+  letter-spacing: 1px;
   line-height: 1.05;
   color: var(--clr-white);
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   text-shadow:
-    0 2px 32px rgba(0, 0, 0, 0.9),
-    0 1px 8px  rgba(0, 0, 0, 0.8);
+    0 2px 32px rgba(0, 0, 0, 0.95),
+    0 1px 8px  rgba(0, 0, 0, 0.85);
 }
 
 .hero-tagline {
-  font-size: clamp(15px, 2vw, 19px);
+  font-size: clamp(14px, 1.8vw, 17px);
   color: rgba(255, 255, 255, 0.75);
-  max-width: 540px;
-  margin-inline: auto;
-  margin-bottom: 40px;
+  max-width: 480px;
+  margin-bottom: 28px;
   line-height: 1.65;
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.8);
 }
 
 .hero-cta {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 /* =====================
