@@ -279,7 +279,7 @@ nav.scrolled {
    ===================== */
 .hero {
   position: relative;
-  min-height: 25vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   background: var(--clr-bg);
@@ -361,7 +361,7 @@ nav.scrolled {
 .hero-tagline {
   font-size: clamp(14px, 1.8vw, 17px);
   color: rgba(255, 255, 255, 0.75);
-  max-width: 480px;
+  max-width: 520px;
   margin-bottom: 28px;
   line-height: 1.65;
   text-shadow:
