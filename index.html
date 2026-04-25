@@ -83,6 +83,12 @@
       </div>
     </div>
   </div>
+
+  <a href="#bio" class="hero-scroll-cta" aria-label="Scroll down">
+    <svg width="40" height="40" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 7L10 13L16 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
 </section>
 
 
@@ -400,8 +406,10 @@
 <script>
   // Nav backdrop blur on scroll
   const nav = document.getElementById('site-nav');
+  const scrollCta = document.querySelector('.hero-scroll-cta');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 20);
+    if (scrollCta) scrollCta.classList.toggle('hidden', window.scrollY > 80);
   }, { passive: true });
 
   // Mobile hamburger
