@@ -14,12 +14,12 @@ export default {
   },
 
   en: {
-    title:       'Machinations Talk',
+    title:       'Game Design Talk',
     description: 'Introduction to Simulating Game Economies — a talk on using Machinations to model, test, and balance game economy systems.',
   },
 
   jp: {
-    title:       'Machinationsトーク',
+    title:       'ゲームデザイントーク',
     description: 'ゲームエコノミーのシミュレーション入門 — Machinationsを使ったゲーム経済システムのモデリング・テスト・バランス調整についての講演。',
   },
 };
