@@ -11,7 +11,7 @@ export default {
   },
 
   links: {
-    // steam: 'https://...',
+    itch: 'https://arrakh.itch.io/the-covered',
   },
 
   en: {

@@ -83,8 +83,6 @@ export const TRANSLATIONS = {
     'projects.steamPage': 'Steam Page',
     'projects.playLink':  'Play here',
 
-    // ---- Placeholder projects (no data.js yet) ----
-    'projects.ecsteroid.title': 'ECSteroid',
 
     // ---- Testimonials ----
     'testimonials.label':   'Testimonials',
@@ -142,8 +140,6 @@ export const TRANSLATIONS = {
     'projects.steamPage': 'Steamページ',
     'projects.playLink':  'プレイする',
 
-    // ---- Placeholder projects ----
-    'projects.ecsteroid.title': 'ECSteroid',
 
     // ---- Testimonials ----
     'testimonials.label':   '推薦の言葉',
